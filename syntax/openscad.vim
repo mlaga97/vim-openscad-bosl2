@@ -20,11 +20,11 @@ syn match openscadModule /\<\h\w*\>/ contained display
 
 syn keyword openscadStatement echo assign let assert
 syn keyword openscadConditional if else
-syn keyword openscadRepeat for intersection_for
+syn keyword openscadRepeat for intersection_for move_copies line_of xcopies ycopies zcopies grid2d rot_copies xrot_copies yrot_copies zrot_copies arc_of ovoid_spread path_spread mirror_copy xflip_copy yflip_copy zflip_copy distribute xdistribute ydistribute zdistribute
 syn keyword openscadInclude include use
 syn keyword openscadCsgKeyword union difference intersection render intersection_for
-syn keyword openscadTransform scale rotate translate mirror multmatrix color minkowski hull projection linear_extrude rotate_extrude offset
-syn keyword openscadPrimitiveSolid cube sphere cylinder polyhedron surface
+syn keyword openscadTransform scale rotate translate mirror multmatrix color minkowski hull projection linear_extrude rotate_extrude offset move left right fwd back down up xmove ymove zmove rot xrot yrot zrot xscale yscale zscale xflip yflip zflip frame_map skew apply
+syn keyword openscadPrimitiveSolid cube sphere cylinder polyhedron surface cuboid prismoid octahedron rect_tube wedge cyl xcyl ycyl zcyl tube pie_slice spheroid torus teardrop onion text3d path_text interior_fillet heightfield cylindrical_heightfield ruler
 syn keyword openscadPrimitive2D square circle polygon import_dxf text
 syn keyword openscadPrimitiveImport import child children
 
